@@ -51,7 +51,7 @@ body{
     transform: all 0.5s ease-in-out;
 }
 
-.menu li:hover{
+.menu li:hover,.active{
     background: #e0e0e058;
 }
 
@@ -72,11 +72,89 @@ menu a i {
     font-size: 1.2rem;
 }
 .logout {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+
+.main-content{
+    position: relative;
+    background: #ebe9eb;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgba(113, 99, 186, 155);
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+/* card container */
+.card-container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-title{
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.register--customers{
+    background: #dfc0e7;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.register--customers:hover{
+    transform: translateY(-5px);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
 
 
 
