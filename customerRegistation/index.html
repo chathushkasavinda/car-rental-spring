@@ -60,7 +60,7 @@
                 <div class="license">
                     <div class="card">
                         <p>License Image</p>
-                        <img src="profile.png" alt="">
+                        <img src="profile.png" id="licenseID">
                         <label for="input-file"> Upload Image</label>
                         <input type="file" accept="image/jpeg, image/jpg,image/png" id="input-file">
                     </div>
@@ -68,8 +68,8 @@
 
                 <div class="license">
                     <div class="card">
-                        <p>License Image</p>
-                        <img src="profile.png" alt="">
+                        <p>NIC Image</p>
+                        <img src="profile.png" id="licenseID">
                         <label for="input-file"> Upload Image</label>
                         <input type="file" accept="image/jpeg, image/jpg,image/png" id="input-file">
                     </div>
@@ -79,10 +79,10 @@
         </form>
     </div>
     <script>
-        let license = document.getElementById("licenseId");
+        let license = document.getElementById("licenseID");
         let inputFile = document.getElementById("input-file");
         inputFile.onchange = function(){
-            license.class = URL.createObjectURL(inputFile.files[0]);
+            license.src = URL.createObjectURL(inputFile.files[0]);
         }
     </script>
 </body>
