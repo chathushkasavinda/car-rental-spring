@@ -15,7 +15,7 @@ body{
     max-width: 700px;
     width: 100%;
     background: #fff;
-    padding: 350px 50px 150px  ;
+    padding: 550px 50px 150px  ;
     border-radius: 5px;
 }
 
@@ -96,4 +96,27 @@ label{
 }
 .card input{
     display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    padding: 0 0 0 350px;
+}
+form .button input{
+    height: 100%;
+    width: 80%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1p;
+    cursor: pointer;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+form .button input:hover{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
 }
