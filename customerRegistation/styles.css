@@ -15,7 +15,7 @@ body{
     max-width: 700px;
     width: 100%;
     background: #fff;
-    padding: 25px 30px;
+    padding: 250px 30px;
     border-radius: 5px;
 }
 
@@ -62,4 +62,38 @@ form .user-details .input-box input{
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
     border-color: #9b59b6;
+}
+
+.license{
+    width: 48%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    top: 80px;
+    width: 400px;
+    background: #fff;
+    padding: 0px;
+    text-align: center;
+}
+.card img{
+    width: 150px;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    width: 150px;
+    background: #9b59b6;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card input{
+    display: none;
 }
