@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Registration Form</h1>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Register Number:</label>
+                        <input type="text" name="fullname" placeholder="Enter Register Number">
+                </div>
+
+                <div class="select-container">
+                    <span class="details">Type:</label>
+                <select class="select-box" id="">
+                    
+                    <option value="luxury">Luxury</option>
+                    <option value="general">General</option>
+                </select> 
+                <div class="icon-container">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>        
+                </div>
+
+                <div class="input-box">
+                    <span class="details">NIC:</label>
+                        <input type="text" name="nic" placeholder="Enter NIC">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email Adress:</label>
+                        <input type="text" name="email" placeholder="Enter valid email">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">License Number:</label>
+                        <input type="text" name="licensenumber" placeholder="Enter valid license number">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Password:</label>
+                        <input type="password" name="password" placeholder="password">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Confirm Password:</label>
+                        <input type="password" name="password confirm" placeholder="password confirmation">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Address</label>
+                        <input type="text" name="address" placeholder="Enter Your home address">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Contact Number:</label>
+                        <input type="text" name="telenum" placeholder="Enter Your Contact Number">
+                </div>
+            
+           
+                <div class="license">
+                    <div class="card">
+                        <p>License Image</p>
+                        <img src="profile.png" id="licenseID">
+                        <label for="input-file"> Upload Image</label>
+                        <input type="file" accept="image/jpeg, image/jpg,image/png" id="input-file">
+                    </div>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="button" value="Register">
+            </div>
+        </form>
+    </div>
+    <script>
+        let license = document.getElementById("licenseID");
+        let inputFile = document.getElementById("input-file");
+        inputFile.onchange = function(){
+            license.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
+</body>
+</html>
