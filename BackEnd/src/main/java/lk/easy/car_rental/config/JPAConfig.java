@@ -1,2 +1,4 @@
-package lk.easy.car_rental.config;public class JPAConfig {
+package lk.easy.car_rental.config;
+
+public class JPAConfig {
 }
