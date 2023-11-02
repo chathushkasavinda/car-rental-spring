@@ -28,6 +28,18 @@ public class CustomerController {
         return new ResponseUtil("OK","Successfully Saved...!!",customerService.getAllCustomer());
     }
 
+    @DeleteMapping
+    public ResponseUtil deleteCustomer(@RequestBody String nic){
+        customerService.deleteCustomer(nic);
+        return new ResponseUtil("Ok","Successfully updated...!!!","");
+    }
+
+    @PutMapping
+    public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO){
+        customerService.updateCustomer(customerDTO);
+        return new ResponseUtil("OK","Successfully Deleted....!!","");
+    }
+
 
 
 }

@@ -30,4 +30,14 @@ public class CustomerServiceImpl implements CustomerService {
     public List<CustomerDTO> getAllCustomer() throws RuntimeException {
         return null;
     }
+
+    @Override
+    public void updateCustomer(CustomerDTO customerDTO) {
+
+    }
+
+    @Override
+    public void deleteCustomer(String nic) {
+
+    }
 }

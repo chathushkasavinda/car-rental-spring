@@ -7,6 +7,8 @@ import java.util.List;
 public interface CustomerService {
     public void saveCustomer(CustomerDTO customerDTO) throws RuntimeException;
     public List<CustomerDTO> getAllCustomer() throws RuntimeException;
+    public void updateCustomer(CustomerDTO customerDTO);
+    public void deleteCustomer(String nic);
 
 
 }
