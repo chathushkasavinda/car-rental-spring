@@ -11,23 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff96ef7-2931-427f-b099-444857ad7494" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/JPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/config/WebRootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/repo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/util/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CarRegistration/car-image.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CarRegistration/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CarRegistration/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/FrontEnd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrontEnd/FrontEnd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/FrontEnd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrontEnd/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/controller/CustomerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerRegistation/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerRegistation/profile.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerRegistation/styles.css" beforeDir="false" />
@@ -68,13 +57,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FrontEnd" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1321004" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.90" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.90" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/BackEnd_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/car-rental/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="BackEnd:war exploded">
@@ -171,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698823580463</updated>
       <workItem from="1698823581747" duration="13000" />
-      <workItem from="1698824386174" duration="846000" />
+      <workItem from="1698824386174" duration="11053000" />
     </task>
     <servers />
   </component>
