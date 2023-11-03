@@ -1,6 +1,7 @@
 package lk.easy.car_rental.controller;
 
 import lk.easy.car_rental.dto.CustomerDTO;
+import lk.easy.car_rental.dto.CustomerImageDTO;
 import lk.easy.car_rental.service.CustomerService;
 import lk.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,10 @@ public class CustomerController {
         customerService.saveCustomer(customerDTO);
         return new ResponseUtil("OK","Successfully Saved!!","");
 
+    }
+    public ResponseUtil saveImages(@ModelAttribute CustomerImageDTO customerImageDTO){
+        customerService.saveImages(customerImageDTO.getNic(), customerImageDTO);
+        return new ResponseUtil("OK", "Successfully Saved..!", "");
     }
     @GetMapping
     public ResponseUtil getAll(){
