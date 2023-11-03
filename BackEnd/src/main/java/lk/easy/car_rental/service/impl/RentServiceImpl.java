@@ -6,6 +6,7 @@ import lk.easy.car_rental.entity.Rent;
 import lk.easy.car_rental.entity.RentDetail;
 import lk.easy.car_rental.repo.CarRepo;
 import lk.easy.car_rental.repo.DriverRepo;
+import lk.easy.car_rental.repo.RentRepo;
 import lk.easy.car_rental.service.RentService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
@@ -26,8 +27,9 @@ public class RentServiceImpl implements RentService {
 
     CarRepo carRepo;
 
+    RentDetail rentDetail;
 
-
+    RentRepo rentRepo;
 
     @Override
     public void requestRent(RentDTO rentDTO) {
@@ -61,7 +63,8 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public String generateNewRentID() {
-        return null;
+        String lastRentId = rentRepo.getLastRentId();
+        return lastRentId != null ? String.format("RID-%03d", (Integer.parseInt(lastRentId.replace("RID-", "")) + 1)) : "RID-001";
     }
 
     @Override
