@@ -40,6 +40,4 @@ public class CustomerController {
         return new ResponseUtil("OK","Successfully Deleted....!!","");
     }
 
-
-
 }
