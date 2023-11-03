@@ -17,4 +17,9 @@ public class PaymentController {
         System.out.println(paymentDTO);
         return new ResponseUtil("OK", "Successfully Saved..!", "");
     }
+
+    @GetMapping
+    public ResponseUtil getAllPayments(){
+        return new ResponseUtil("OK", "Successfully Loaded..!", paymentService.loadAllPayments());
+    }
 }
