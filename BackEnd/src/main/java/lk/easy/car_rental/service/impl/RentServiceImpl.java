@@ -4,6 +4,7 @@ import lk.easy.car_rental.dto.RentDTO;
 import lk.easy.car_rental.entity.Car;
 import lk.easy.car_rental.entity.Rent;
 import lk.easy.car_rental.entity.RentDetail;
+import lk.easy.car_rental.repo.CarRepo;
 import lk.easy.car_rental.repo.DriverRepo;
 import lk.easy.car_rental.service.RentService;
 import org.modelmapper.ModelMapper;
@@ -22,6 +23,10 @@ public class RentServiceImpl implements RentService {
     ModelMapper mapper;
 
     DriverRepo driverRepo;
+
+    CarRepo carRepo;
+
+
 
 
     @Override
