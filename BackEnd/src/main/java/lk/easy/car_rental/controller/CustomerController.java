@@ -24,10 +24,12 @@ public class CustomerController {
         return new ResponseUtil("OK","Successfully Saved!!","");
 
     }
+    @PostMapping(params = "/image")
     public ResponseUtil saveImages(@ModelAttribute CustomerImageDTO customerImageDTO){
         customerService.saveImages(customerImageDTO.getNic(), customerImageDTO);
         return new ResponseUtil("OK", "Successfully Saved..!", "");
     }
+
     @GetMapping
     public ResponseUtil getAll(){
         return new ResponseUtil("OK","Successfully Saved...!!",customerService.getAllCustomer());
@@ -43,6 +45,13 @@ public class CustomerController {
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO){
         customerService.updateCustomer(customerDTO);
         return new ResponseUtil("OK","Successfully Deleted....!!","");
+    }
+
+    @GetMapping(path = "/count")
+    public ResponseUtil countCustomers(){
+
+        return new ResponseUtil("OK", "Successfully Loaded..!", customerService.countCustomers());
+
     }
 
 }

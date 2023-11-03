@@ -11,6 +11,6 @@ public interface CustomerService {
     public void updateCustomer(CustomerDTO customerDTO);
     public void deleteCustomer(String nic);
     public void saveImages(String nic, CustomerImageDTO imageDTO) throws RuntimeException;
-
+    public Long countCustomers() throws RuntimeException;
 
 }
