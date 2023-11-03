@@ -9,11 +9,13 @@ import lk.easy.car_rental.repo.DriverRepo;
 import lk.easy.car_rental.repo.RentRepo;
 import lk.easy.car_rental.service.RentService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Driver;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -69,6 +71,8 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public List<RentDTO> getAllRents() {
+        return mapper.map(rentRepo.findAll(), new TypeToken<ArrayList<RentDTO>>() {
+        }.getType());
 
     }
 
