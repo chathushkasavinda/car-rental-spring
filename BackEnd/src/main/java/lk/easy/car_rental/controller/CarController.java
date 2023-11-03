@@ -24,4 +24,11 @@ public class CarController {
         return new ResponseUtil("OK", "Successfully Saved..!", "");
 
     }
+
+    @GetMapping
+    public ResponseUtil getAll() {
+
+        return new ResponseUtil("OK", "Successfully Loaded..!", carService.getAllCars());
+
+    }
 }
