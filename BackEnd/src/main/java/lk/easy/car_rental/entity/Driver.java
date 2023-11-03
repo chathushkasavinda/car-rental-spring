@@ -5,8 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,4 +24,7 @@ public class Driver {
     private String contact;
     private String email;
     private String availabilityStatus;
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
+    private String licenseImage;
 }

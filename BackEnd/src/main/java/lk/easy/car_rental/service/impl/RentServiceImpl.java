@@ -1,10 +1,13 @@
 package lk.easy.car_rental.service.impl;
 
+import lk.easy.car_rental.dto.CustomerDTO;
 import lk.easy.car_rental.dto.RentDTO;
+import lk.easy.car_rental.dto.RentDetailDTO;
 import lk.easy.car_rental.entity.Car;
 import lk.easy.car_rental.entity.Rent;
 import lk.easy.car_rental.entity.RentDetail;
 import lk.easy.car_rental.repo.CarRepo;
+import lk.easy.car_rental.repo.CustomerRepo;
 import lk.easy.car_rental.repo.DriverRepo;
 import lk.easy.car_rental.repo.RentRepo;
 import lk.easy.car_rental.service.RentService;
@@ -33,12 +36,12 @@ public class RentServiceImpl implements RentService {
 
     RentRepo rentRepo;
 
+    CustomerRepo customerRepo;
+
     @Override
-    public void requestRent(RentDTO rentDTO) {
+    public void requestRent(RentDTO rentDTO) throws RuntimeException{
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         Rent rent = mapper.map(rentDTO, Rent.class);
-
-        System.out.println(rent);
 
         if (rentDTO.getDriverRequest().equals("YES")) {
 
@@ -74,6 +77,36 @@ public class RentServiceImpl implements RentService {
         return mapper.map(rentRepo.findAll(), new TypeToken<ArrayList<RentDTO>>() {
         }.getType());
 
+    }
+
+    @Override
+    public void acceptRentRequest(String rentId, String option) throws RuntimeException {
+
+    }
+
+    @Override
+    public RentDTO getRentByRentId(String rentId) throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public List<RentDetailDTO> getDriverSchedule(String nic) throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public List<RentDTO> getRentByNic(String nic) throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public Long countRents() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public CustomerDTO getCustomerByUsername(String username) throws RuntimeException {
+        return null;
     }
 
 }

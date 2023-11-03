@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @ToString
+@IdClass(RentCar_PK.class)
 public class RentDetail {
     @Id
     private String rentId;
@@ -25,4 +26,13 @@ public class RentDetail {
     @ManyToOne
     @JoinColumn(name = "rentId", referencedColumnName = "rentId", insertable = false, updatable = false)
     private Rent rent;
+
+
+    @ManyToOne
+    @JoinColumn(name = "regNum", referencedColumnName = "regNum", insertable = false, updatable = false)
+    private Car car;
+
+    @ManyToOne
+    @JoinColumn(name = "nic", referencedColumnName = "nic", insertable = false, updatable = false)
+    private Driver driver;
 }
