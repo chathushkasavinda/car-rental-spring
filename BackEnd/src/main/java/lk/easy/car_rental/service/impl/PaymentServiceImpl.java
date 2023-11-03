@@ -9,6 +9,7 @@ import lk.easy.car_rental.service.PaymentService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -36,5 +37,40 @@ public class PaymentServiceImpl implements PaymentService {
     public List<PaymentDTO> loadAllPayments() throws RuntimeException {
         return mapper.map(paymentRepo.findAll(), new TypeToken<ArrayList<PaymentDTO>>() {
         }.getType());
+    }
+
+    @Override
+    public List<PaymentDTO> getPaymentsByNic(String nic) throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public List getDailyIncome() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public List getMonthlyIncome() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public List getYearlyIncome() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public BigDecimal getCurrentDayIncome() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public BigDecimal getCurrentMonthIncome() throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public BigDecimal getCurrentYearIncome() throws RuntimeException {
+        return null;
     }
 }

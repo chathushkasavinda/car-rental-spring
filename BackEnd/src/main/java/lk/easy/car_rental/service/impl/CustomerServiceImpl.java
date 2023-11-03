@@ -1,6 +1,7 @@
 package lk.easy.car_rental.service.impl;
 
 import lk.easy.car_rental.dto.CustomerDTO;
+import lk.easy.car_rental.dto.CustomerImageDTO;
 import lk.easy.car_rental.entity.Customer;
 import lk.easy.car_rental.repo.CustomerRepo;
 import lk.easy.car_rental.service.CustomerService;
@@ -39,5 +40,15 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void deleteCustomer(String nic) {
 
+    }
+
+    @Override
+    public void saveImages(String nic, CustomerImageDTO imageDTO) throws RuntimeException {
+
+    }
+
+    @Override
+    public Long countCustomers() throws RuntimeException {
+        return null;
     }
 }
