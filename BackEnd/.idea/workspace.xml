@@ -9,36 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ff96ef7-2931-427f-b099-444857ad7494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/controller/DriverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/CarDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/DriverDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/repo/CarRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/DriverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/impl/CarServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/impl/DriverServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8ff96ef7-2931-427f-b099-444857ad7494" name="Default Changelist" comment="Content Updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/controller/RentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/dto/RentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/Rent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/entity/RentDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/repo/DriverRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/repo/RentRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/RentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/easy/car_rental/service/impl/RentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CarRegistration/car-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CarRegistration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CarRegistration/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/FrontEnd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/FrontEnd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/controller/CustomerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerRegistation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerRegistation/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerRegistation/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dashboard/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dashboard/rentalcar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dashboard/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../driverRegistration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../driverRegistration/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../driverRegistration/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../loginform/carimage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../loginform/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../loginform/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,8 +171,16 @@
       <option name="presentableId" value="Default" />
       <updated>1698823580463</updated>
       <workItem from="1698823581747" duration="13000" />
-      <workItem from="1698824386174" duration="16593000" />
+      <workItem from="1698824386174" duration="23575000" />
     </task>
+    <task id="LOCAL-00001" summary="Content Updated">
+      <created>1698951430671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698951430671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,5 +196,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Content Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content Updated" />
   </component>
 </project>
