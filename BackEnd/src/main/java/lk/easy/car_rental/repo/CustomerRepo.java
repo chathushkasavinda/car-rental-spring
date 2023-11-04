@@ -6,8 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-@Repository
-@Qualifier
+
 public interface CustomerRepo extends JpaRepository<Customer,String > {
     @Query(value = "SELECT * FROM Customer WHERE user_username=?", nativeQuery = true)
     Customer getCustomerByUsername(String username);

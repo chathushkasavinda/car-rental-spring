@@ -11,19 +11,21 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 public class RentController {
 
+    @Autowired
     RentService rentService;
-
-    @GetMapping
-    public ResponseUtil generateNewRentID(){
-
-        return new ResponseUtil("Ok","Successfully Requseted","");
-    }
 
     @PostMapping
     public ResponseUtil rentRequest(@RequestBody RentDTO rentDTO) {
 
         rentService.requestRent(rentDTO);
         return new ResponseUtil("OK", "Successfully Requested..!", "");
+
+    }
+
+    @GetMapping
+    public ResponseUtil generateNewRentId() {
+
+        return new ResponseUtil("OK", "Successfully Requested..!", rentService.generateNewRentId());
 
     }
 
@@ -69,4 +71,5 @@ public class RentController {
         return new ResponseUtil("OK", "Successfully Loaded..!", rentService.countRents());
 
     }
+
 }

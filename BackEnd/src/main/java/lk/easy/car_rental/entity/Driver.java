@@ -16,6 +16,7 @@ import javax.persistence.OneToOne;
 @Data
 @ToString
 public class Driver {
+
     @Id
     private String nic;
     private String license;

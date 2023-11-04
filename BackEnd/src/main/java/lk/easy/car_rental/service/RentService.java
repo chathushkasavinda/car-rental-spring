@@ -7,9 +7,10 @@ import lk.easy.car_rental.dto.RentDetailDTO;
 import java.util.List;
 
 public interface RentService {
-    public void requestRent(RentDTO rentDTO);
 
-    public String generateNewRentID();
+    public void requestRent(RentDTO rentDTO) throws RuntimeException;
+
+    public String generateNewRentId() throws RuntimeException;
 
     public CustomerDTO getCustomerByUsername(String username) throws RuntimeException;
 
